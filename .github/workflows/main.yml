@@ -33,7 +33,7 @@ jobs:
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
         git add .
-        git commit -m "update log" -a
+        git commit -m "update log on $(date)" -a
     - name: Push log
       uses: ad-m/github-push-action@master
       with:
